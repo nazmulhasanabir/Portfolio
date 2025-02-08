@@ -10,7 +10,7 @@ const Education = () => {
       <div className=" p-3 mb-4  flex  items-center justify-center  space-x-4 ">
         <button
           className={`px-6 py-2 rounded-lg text-lg font-semibold  ${
-            activeTab === "education" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"
+            activeTab === "education" ? "bg-blue-500 text-white" : "bg-gray-700 text-gray-300"
           }`}
           onClick={() => setActiveTab("education")}
         >
@@ -18,7 +18,7 @@ const Education = () => {
         </button>
         <button
           className={`px-6 py-2 rounded-lg text-lg font-semibold  ${
-            activeTab === "experience" ? "bg-purple-600 text-white" : "bg-gray-700 text-gray-300"
+            activeTab === "experience" ? "bg-blue-500  text-white" : "bg-gray-700 text-gray-300"
           }`}
           onClick={() => setActiveTab("experience")}
         >

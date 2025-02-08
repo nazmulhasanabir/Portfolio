@@ -1,5 +1,7 @@
 import About from "../Page/About";
+import Contact from "../Page/Contact";
 import Education from "../Page/Education";
+import Footer from "../Page/Footer";
 import HomePage from "../Page/HomePage";
 import Navbar from "../Page/Navbar";
 import Project1 from "../Page/Project1";
@@ -11,7 +13,9 @@ const Home = () => {
   return (
     <div className="bg-gray-950">
     <div className="w-10/12 mx-auto text-white">
+      <div className="sticky top-0 z-50">
       <Navbar></Navbar>
+      </div>
       <div id="home">
         <HomePage></HomePage>
       </div>
@@ -29,6 +33,10 @@ const Home = () => {
       <Project2></Project2>
       <Project3></Project3>
       </div>
+      <div id="contact">
+      <Contact></Contact>
+      </div>
+      <Footer></Footer>
     </div>
   </div>
   );

@@ -1,9 +1,9 @@
 const About = () => {
   return (
     <div className="w-8/12 mx-auto mt-14">
-      <h2 className="text-center font-bold text-4xl text-yellow-300">Who am I?</h2>
+      <h2 className="text-center font-bold text-4xl text-blue-500">About</h2>
       <div>
-       <p className="text-center mt-5">
+       <p className="text-center mt-5 flex flex-wrap justify-center ">
        Hi, I'm Nazmul Hasan Abir, a passionate Frontend Developer dedicated to
         crafting visually stunning and high-performance web experiences. With a
         keen eye for design and functionality, I specialize in building

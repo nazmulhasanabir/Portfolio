@@ -1,9 +1,10 @@
+import { Link } from "react-scroll";
 import img from "../assets/Screenshot_3.png";
 const HomePage = () => {
   return (
     <div>
-      <div className=" w-6/12 mx-auto">
-        <div className="flex justify-between  items-center mt-20 ">
+      <div className="  sm:w-6/12 mx-auto">
+        <div className="flex flex-col lg:flex-row gap-10    items-center mt-20 ">
           <div>
             <p className="text-2xl  text-center">
               <span> "Hi, I'm</span> <br />{" "}
@@ -13,7 +14,9 @@ const HomePage = () => {
               for creating beautiful and responsive websites
             </p>
             <div className=" flex justify-center m-5">
-            <button className="btn mr-4 btn-success">Hire Me</button>
+              <Link to="contact" duration={2500} smooth={true} spy={true}>
+            <button className="btn mr-4 bg-blue-500 text-white">Hire Me</button>
+              </Link>
             </div>
           </div>
           <div>

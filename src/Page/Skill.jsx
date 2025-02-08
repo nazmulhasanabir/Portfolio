@@ -2,8 +2,8 @@ const Skill = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold text-center mt-20">Skills</h2>
-      <div className=" flex items-center justify-center w-6/12 mx-auto bg-gray-900 rounded-3xl">
-        <div className="grid grid-cols-4 gap-6 p-6">
+      <div className=" flex items-center justify-center max-w-screen-sm mx-auto bg-gray-900 rounded-3xl">
+        <div className="flex flex-wrap gap-5 md:gap-10 justify-center p-10">
           {/* HTML */}
           <div className="bg-gray-800 p-6 rounded-lg flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
             <img

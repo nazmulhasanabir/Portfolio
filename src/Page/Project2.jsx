@@ -5,11 +5,11 @@ const Project2 = () => {
   return (
     <div>
       <div>
-        <div className="bg-gray-950 text-white py-16 px-6 flex justify-center">
-          <div className="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+        <div className="bg-gray-950 text-white py-16 px-6 flex  justify-center">
+          <div className="max-w-6xl w-full flex flex-col-reverse lg:flex-row  gap-12 items-center">
             {/* Text Section */}
             <div>
-              <p className="text-green-400 text-sm">Featured Project</p>
+              <p className="text-blue-500 text-sm">Featured Project</p>
               <h2 className="text-3xl font-bold mt-2">
               FEEDBACKER
               </h2>
@@ -24,7 +24,7 @@ const Project2 = () => {
               </p>
 
               {/* Tech Stack */}
-              <div className="flex gap-2 mt-4">
+              <div className="flex flex-wrap gap-2 mt-4">
                 <span className="bg-gray-800 px-3 py-1 rounded text-sm">
                   Node.js
                 </span>
@@ -62,11 +62,11 @@ const Project2 = () => {
               </div>
             </div>
                {/* Image Section */}
-               <div className="rounded-lg overflow-hidden shadow-lg">
+               <div className="rounded-2xl border-2 border-blue-500 p-4 overflow-hidden shadow-lg">
               <img
                 src={img} // Change this to your actual image path
                 alt="Project Preview"
-                className="w-full h-auto"
+                className="w-full h-auto rounded-xl"
               />
             </div>
 

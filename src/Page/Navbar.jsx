@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 import img from '../assets/logo.png'
 const Navbar = () => {
   return (
-    <div className="text-white bg-amber-400">
+    <div className="text-white bg-blue-400 rounded-b-2xl border-2 border-b-white  ">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -51,37 +51,39 @@ const Navbar = () => {
             </Link>
             </ul>
           </div>
-          <img className="w-[90px]" src={img} alt="" />
+          <img className="w-[50px]  " src={img} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-          <Link to="home" className='cursor-pointer' spy={true} smooth={true} duration={500}>
+          <Link to="home" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
               <a>Home</a>
             </Link>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="about" className='cursor-pointer' spy={true} smooth={true} duration={500}>
+            <Link to="about" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
               <a>About</a>
             </Link>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="skill" className='cursor-pointer' spy={true} smooth={true} duration={500}>
+            <Link to="skill" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
               <a>Skill</a>
             </Link>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="education" className='cursor-pointer' spy={true} smooth={true} duration={500}>
+            <Link to="education" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
               <a>Education</a>
             </Link>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="project" className='cursor-pointer' spy={true} smooth={true} duration={500}>
+            <Link to="project" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
               <a>Project</a>
             </Link>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="contact"className='cursor-pointer' spy={true} smooth={true} duration={500}> 
+            <Link to="contact"className='cursor-pointer' spy={true} smooth={true} duration={2500}> 
               <a>Contact</a>
+            </Link>
+            <Link >
             </Link>
           </ul>
         </div>
-        <div className="navbar-end">
-          <a className="btn">Download Resume</a>
+        <div className="navbar-end  hidden  sm:flex">
+          <a href='https://drive.usercontent.google.com/uc?id=1TSMYztCrR08nFrHX92jbO6PtYgJvwFS5&export=download' className="btn">Download Resume</a>
         </div>
       </div>
     </div>
