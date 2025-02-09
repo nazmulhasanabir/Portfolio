@@ -83,7 +83,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end  hidden  sm:flex">
-          <a href='https://drive.usercontent.google.com/uc?id=1TSMYztCrR08nFrHX92jbO6PtYgJvwFS5&export=download' className="btn">Download Resume</a>
+          <a  href='https://drive.usercontent.google.com/uc?id=11nD0iqeqwqh4-Ld7JT3S_ohDU4IVV85N&export=download' className="btn">Download Resume</a>
         </div>
       </div>
     </div>
