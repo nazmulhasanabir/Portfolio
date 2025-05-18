@@ -1,5 +1,6 @@
-import { Link } from 'react-scroll';
-import img from '../assets/logo.png'
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+import img from "../assets/logo.png";
 const Navbar = () => {
   return (
     <div className="text-white bg-blue-400 rounded-b-2xl border-2 border-b-white  ">
@@ -26,64 +27,128 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-gray-900 text-center rounded-box z-[1] mt-3 w-52  shadow"
             >
-             <Link  to="home" className='cursor-pointer'  spy={true} smooth={true} duration={500}>
-              <a>Home</a>
-            </Link>
-            <div className="divider lg:divider-horizontal"></div>
-            <Link to="about" className='cursor-pointer' spy={true} smooth={true} duration={500}>
-              <a>About</a>
-            </Link>
-            <div className="divider lg:divider-horizontal"></div>
-            <Link to="skill" className='cursor-pointer' spy={true} smooth={true} duration={500}>
-              <a>Skill</a>
-            </Link>
-            <div className="divider lg:divider-horizontal"></div>
-            <Link to="education" className='cursor-pointer' spy={true} smooth={true} duration={500}>
-              <a>Education</a>
-            </Link>
-            <div className="divider lg:divider-horizontal"></div>
-            <Link to="project" className='cursor-pointer' spy={true} smooth={true} duration={500}>
-              <a>Project</a>
-            </Link>
-            <div className="divider lg:divider-horizontal"></div>
-            <Link to="contact" className='cursor-pointer' spy={true} smooth={true} duration={500}> 
-              <a>Contact</a>
-            </Link>
+              <RouterLink to="/" className="cursor-pointer">
+                Home
+              </RouterLink>
+              <div className="divider lg:divider-horizontal"></div>
+              <ScrollLink
+                to="about"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <a>About</a>
+              </ScrollLink>
+              <div className="divider lg:divider-horizontal"></div>
+              <ScrollLink
+                to="skill"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <a>Skill</a>
+              </ScrollLink>
+              <div className="divider lg:divider-horizontal"></div>
+              <ScrollLink
+                to="education"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <a>Education</a>
+              </ScrollLink>
+              <div className="divider lg:divider-horizontal"></div>
+              <ScrollLink
+                to="project"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <a>Project</a>
+              </ScrollLink>
+              <div className="divider lg:divider-horizontal"></div>
+              <ScrollLink
+                to="contact"
+                className="cursor-pointer"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                <a>Contact</a>
+              </ScrollLink>
             </ul>
           </div>
-          <img className="w-[50px]  " src={img} alt="" />
+          <img className="w-[50px] rounded-full  " src={img} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-          <Link to="home" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
-              <a>Home</a>
-            </Link>
+            <RouterLink to="/" className="cursor-pointer">
+              Home
+            </RouterLink>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="about" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
+            <ScrollLink
+              to="about"
+              className="cursor-pointer"
+              spy={true}
+              smooth={true}
+              duration={1500}
+            >
               <a>About</a>
-            </Link>
+            </ScrollLink>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="skill" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
+            <ScrollLink
+              to="skill"
+              className="cursor-pointer"
+              spy={true}
+              smooth={true}
+              duration={1500}
+            >
               <a>Skill</a>
-            </Link>
+            </ScrollLink>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="education" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
+            <ScrollLink
+              to="education"
+              className="cursor-pointer"
+              spy={true}
+              smooth={true}
+              duration={1500}
+            >
               <a>Education</a>
-            </Link>
+            </ScrollLink>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="project" className='cursor-pointer' spy={true} smooth={true} duration={1500}>
+            <ScrollLink
+              to="project"
+              className="cursor-pointer"
+              spy={true}
+              smooth={true}
+              duration={1500}
+            >
               <a>Project</a>
-            </Link>
+            </ScrollLink>
             <div className="divider lg:divider-horizontal"></div>
-            <Link to="contact"className='cursor-pointer' spy={true} smooth={true} duration={2500}> 
+            <ScrollLink
+              to="contact"
+              className="cursor-pointer"
+              spy={true}
+              smooth={true}
+              duration={2500}
+            >
               <a>Contact</a>
-            </Link>
-            <Link >
-            </Link>
+            </ScrollLink>
+      
           </ul>
         </div>
-        <div className="navbar-end  hidden  sm:flex">
-          <a  href='https://drive.usercontent.google.com/uc?id=11nD0iqeqwqh4-Ld7JT3S_ohDU4IVV85N&export=download' className="btn">Download Resume</a>
+        <div className="navbar-end  ">
+          <a
+            href="https://drive.usercontent.google.com/uc?id=1nifixPVWM_zXvCjagsRJ2TXMr887S23e&export=download"
+            className="btn"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>

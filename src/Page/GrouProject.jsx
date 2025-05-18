@@ -1,27 +1,26 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-import img from "../assets/Feedbacker.png";
+import img from "../assets/494357787_2660104427518512_8680490518440908560_n.png";
 import { TbListDetails } from "react-icons/tb";
-const Project2 = () => {
+const GrouProject = () => {
   return (
     <div>
       <div>
+        <p className="text-blue-500 text-xl font-bold text-center">
+          Group Project
+        </p>
+
         <div className="bg-gray-950 text-white py-16 px-6 flex  justify-center">
           <div className="max-w-6xl w-full flex flex-col-reverse lg:flex-row  gap-12 items-center">
             {/* Text Section */}
             <div>
-              <p className="text-blue-500 text-sm">Featured Project</p>
-              <h2 className="text-3xl font-bold mt-2">
-              FEEDBACKER
-              </h2>
+              <h2 className="text-3xl font-bold mt-2">Rex Auction</h2>
               <p className="text-gray-400 mt-4">
-                The Best Service Review Application System is a robust and
-                user-friendly platform that allows users to explore, review, and
-                manage services effectively. This application provides a
-                seamless interface for service providers and reviewers, ensuring
-                a professional experience. adventure experiences seamlessly. It
-                offers a user-friendly interface, authentication, and detailed
-                adventure listings.
+                Rex Auction is a modern auction platform built with React,
+                Next.js, and Firebase, designed for a seamless and interactive
+                bidding experience. This project leverages Vite for fast
+                development, Tailwind CSS for styling, and Framer Motion for
+                smooth animations.
               </p>
 
               {/* Tech Stack */}
@@ -33,7 +32,7 @@ const Project2 = () => {
                   MongoDB
                 </span>
                 <span className="bg-gray-800 px-3 py-1 rounded text-sm">
-              Firebase
+                  Firebase
                 </span>
                 <span className="bg-gray-800 px-3 py-1 rounded text-sm">
                   React.js
@@ -49,35 +48,30 @@ const Project2 = () => {
               {/* Links */}
               <div className="flex gap-4 mt-6 text-gray-400 text-xl">
                 <a
-                  href="https://github.com/nazmulhasanabir/Feedbacker-client-side"
+                  href="https://github.com/SouravDn-p/RexAuction"
                   className="hover:text-white"
                 >
                   <FaGithub />
                 </a>
                 <a
-                  href="https://feedbacker-76382.web.app/"
+                  href="https://rex-auction.web.app/"
                   className="hover:text-white"
                 >
                   <FaExternalLinkAlt />
                 </a>
-                <a
-                  href="/project-details-2"
-                  className="hover:text-white"
-                >
+                <a href="/Group-project-details" className="hover:text-white">
                   <TbListDetails />
                 </a>
-                
               </div>
             </div>
-               {/* Image Section */}
-               <div className="rounded-2xl border-2 border-blue-500 p-4 overflow-hidden shadow-lg">
+            {/* Image Section */}
+            <div className="rounded-2xl border-2 border-blue-500 p-4 overflow-hidden shadow-lg">
               <img
                 src={img} // Change this to your actual image path
                 alt="Project Preview"
                 className="w-full h-auto rounded-xl"
               />
             </div>
-
           </div>
         </div>
       </div>
@@ -85,4 +79,4 @@ const Project2 = () => {
   );
 };
 
-export default Project2;
+export default GrouProject;

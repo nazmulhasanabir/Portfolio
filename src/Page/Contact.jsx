@@ -2,7 +2,6 @@
 
 import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-scroll";
 
 const Contact = () => {
     return (
@@ -27,18 +26,18 @@ const Contact = () => {
 
           <h3 className="text-2xl font-semibold mt-4">Let's connect</h3>
           <div className="flex gap-4 text-2xl">
-           <Link to="https://www.linkedin.com/in/nazmul-hasan-abir-4648bb333/" >
+           <a  target="_blank" href="https://www.linkedin.com/in/nazmul-hasan-abir/" >
              <FaLinkedin className="cursor-pointer hover:text-blue-400"></FaLinkedin>
-           </Link>
-           <Link to="https://github.com/nazmulhasanabir">
+           </a>
+           <a target="_blank" href="https://github.com/nazmulhasanabir">
             <FaGithub className="cursor-pointer hover:text-gray-400" />
-           </Link>
-           <Link to="https://www.facebook.com/abirhasan.amd">
+           </a>
+           <a target="_blank" href="https://www.facebook.com/NazmulHasanAbir72">
             <FaFacebook className="cursor-pointer hover:text-blue-500" />
-            </Link>
-           <Link to="https://x.com/HasanAbir2024">
+            </a>
+           <a target="_blank" href="https://x.com/HasanAbir2024">
             <FaXTwitter className="cursor-pointer hover:text-gray-300" />
-            </Link>
+            </a>
           </div>
         </div>
 

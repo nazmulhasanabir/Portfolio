@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import img from "../assets/Screenshot_3.png";
+import img from "../assets/img.png";
 const HomePage = () => {
   return (
     <div>
@@ -10,12 +10,14 @@ const HomePage = () => {
               <span> "Hi, I'm</span> <br />{" "}
               <span className="font-bold">Nazmul Hasan Abir</span>
               <br />
-              <span className="font-bold">web developer</span> with a passion
+              <span className="font-bold">Web Developer</span> with a passion
               for creating beautiful and responsive websites
             </p>
             <div className=" flex justify-center m-5">
               <Link to="contact" duration={2500} smooth={true} spy={true}>
-            <button className="btn mr-4 bg-blue-500 text-white">Hire Me</button>
+                <button className="btn mr-4 bg-blue-500 text-white">
+                  Hire Me
+                </button>
               </Link>
             </div>
           </div>

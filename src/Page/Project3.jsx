@@ -1,5 +1,6 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import img from "../assets/movie.png";
+import { TbListDetails } from "react-icons/tb";
 const Project3 = () => {
     return (
          <div>
@@ -61,6 +62,12 @@ const Project3 = () => {
                          className="hover:text-white"
                        >
                          <FaExternalLinkAlt />
+                       </a>
+                       <a
+                         href="/project-details-3"
+                         className="hover:text-white"
+                       >
+                        <TbListDetails />
                        </a>
                      </div>
                    </div>
