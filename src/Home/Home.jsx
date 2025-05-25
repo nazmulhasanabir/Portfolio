@@ -32,7 +32,7 @@ const Home = () => {
           <Project1></Project1>
           <Project2></Project2>
           <Project3></Project3>
-          <GrouProject></GrouProject>
+          {/* <GrouProject></GrouProject> */}
         </div>
         <div id="contact">
           <Contact></Contact>

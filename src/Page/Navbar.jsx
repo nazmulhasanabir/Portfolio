@@ -144,7 +144,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-end  ">
           <a
-            href="https://drive.usercontent.google.com/uc?id=1nifixPVWM_zXvCjagsRJ2TXMr887S23e&export=download"
+            href="https://drive.usercontent.google.com/uc?id=1BbrDyq3PsOpeSmB37e0PSKuNWKIof_oj&export=download"
             className="btn"
           >
             Resume
